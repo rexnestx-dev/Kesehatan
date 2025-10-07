@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik Perawatan - Klinik Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Klinik Sehat</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Praktik Perawatan Profesional</h1>
+            <p>Layanan perawatan terbaik untuk kesehatan dan kecantikan Anda</p>
+            <button class="cta-button" onclick="scrollToServices()">Lihat Layanan</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Jenis Perawatan</h2>
+        <div class="services-grid">
+            <!-- Perawatan 1 -->
+            <div class="service-card" onclick="showServiceDetail('perawatan1')">
+                <div class="service-icon">💆</div>
+                <h3>Perawatan Wajah</h3>
+                <p>Treatment lengkap untuk kulit wajah sehat dan bersinar</p>
+                <button class="service-btn">Detail</button>
+            </div>
+
+            <!-- Perawatan 2 -->
+            <div class="service-card" onclick="showServiceDetail('perawatan2')">
+                <div class="service-icon">💅</div>
+                <h3>Perawatan Tangan & Kaki</h3>
+                <p>Manicure, pedicure, dan treatment khusus</p>
+                <button class="service-btn">Detail</button>
+            </div>
+
+            <!-- Perawatan 3 -->
+            <div class="service-card" onclick="showServiceDetail('perawatan3')">
+                <div class="service-icon">🧖</div>
+                <h3>Perawatan Tubuh</h3>
+                <p>Body massage, scrub, dan relaksasi total</p>
+                <button class="service-btn">Detail</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+            <p>Praktik perawatan profesional dengan pengalaman lebih dari 5 tahun dalam bidang kesehatan dan kecantikan.</p>
+            <div class="features">
+                <div class="feature">
+                    <h4>🕐 Jam Operasional</h4>
+                    <p>Senin - Sabtu: 09:00 - 18:00</p>
+                </div>
+                <div class="feature">
+                    <h4>👨‍⚕️ Tenaga Profesional</h4>
+                    <p>Staff berpengalaman dan bersertifikat</p>
+                </div>
+                <div class="feature">
+                    <h4>⭐ Berkualitas</h4>
+                    <p>Produk premium dan alat steril</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h4>📞 Telepon</h4>
+                <p>0812-3456-7890</p>
+                
+                <h4>📧 Email</h4>
+                <p>info@kliniksehat.com</p>
+                
+                <h4>📍 Alamat</h4>
+                <p>Jl. Kesehatan No. 123, Jakarta</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Klinik Sehat. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
